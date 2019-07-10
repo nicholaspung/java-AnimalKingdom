@@ -1,5 +1,7 @@
 package animalKingdom;
 
+import java.util.*;
+
 public class Main
 {
     public static void main(String[] args)
@@ -27,6 +29,28 @@ public class Main
         System.out.println(m1.getYear());
         System.out.println();
 
+        ArrayList<AbstractAnimal> animalList = new ArrayList<AbstractAnimal>();
+        animalList.add(m1);
+        animalList.add(m2);
+        animalList.add(m3);
+        animalList.add(m4);
+        animalList.add(m5);
+        animalList.add(m6);
+        animalList.add(m7);
 
+        animalList.add(b1);
+        animalList.add(b2);
+        animalList.add(b3);
+        animalList.add(b4);
+        animalList.add(b5);
+
+        animalList.add(f1);
+        animalList.add(f2);
+        animalList.add(f3);
+
+        for (AbstractAnimal a : animalList)
+        {
+            System.out.println(a.getName());
+        }
     }
 }
