@@ -104,5 +104,10 @@ public class Main
         animalList.sort((o1, o2) -> o1.getName().compareToIgnoreCase(o2.getName()));
         printAnimals(animalList, a -> a.getYear() == 1758);
         System.out.println();
+
+        // Previous sorted animalList is already in alphabtical form
+        System.out.println("Animals sorted alphabetically that are mammals");
+        printAnimals(animalList, a -> a instanceof Mammal);
+        System.out.println();
     }
 }
