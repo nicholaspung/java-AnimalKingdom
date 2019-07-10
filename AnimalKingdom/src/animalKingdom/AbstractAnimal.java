@@ -7,10 +7,12 @@ public abstract class AbstractAnimal
     private String name;
     private int year;
 
-    public AbstractAnimal()
+    public AbstractAnimal(String name, int year)
     {
         maxId++;
         id = maxId;
+        this.name = name;
+        this.year = year;
     }
 
     public String eat()
@@ -22,17 +24,17 @@ public abstract class AbstractAnimal
     public abstract String breath();
     public abstract String reproduce();
 
-    private int getId()
+    public int getId()
     {
         return id;
     }
 
-    private String getName()
+    public String getName()
     {
         return name;
     }
 
-    private int getYear()
+    public int getYear()
     {
         return year;
     }
