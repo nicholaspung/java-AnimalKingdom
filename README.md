@@ -60,3 +60,5 @@ Hint: think about abstract classes and creating an arraylist using an abstract c
 * Stretch Goal
     * For the list of animals, list alphabetically those animals that are mammals.
 
+---
+Checking out gitmoji cli
